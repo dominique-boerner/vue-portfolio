@@ -9,7 +9,7 @@ defineEmits(["select-language"]);
 
 </script>
 <template>
-  <div class="flex justify-evenly items-center border border-primary rounded-full mr-4 px-1 dark:border-white transition ease-in-out delay-300">
+  <div class="flex justify-evenly items-center border border-primary rounded-full mr-4 px-1 dark:border-white transition ease-in-out delay-300 select-none">
     <span v-for="language of availableLanguages" class="language-picker-item"
           :class="{'selected': selectedLanguage === language}"
           @click="$emit('select-language', language)">{{ language }}</span>
