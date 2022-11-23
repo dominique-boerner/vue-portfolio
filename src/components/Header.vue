@@ -10,7 +10,7 @@ import {ref} from "vue";
   <div class="flex flex-col justify-center items-center">
     <lottie-animation class="w-96" :animation-data="personAnimation" :loop="true"></lottie-animation>
     <h1 class="title">{{ $t("home.header.title") }}</h1>
-    <article class="text-2xl md:text-4xl text-primary w-10/12 text-center mb-8">
+    <article class="text-2xl md:text-4xl text-primary w-10/12 text-center mb-8 dark:text-white transition ease-in-out delay-300">
       {{ $t("home.header.text") }}
     </article>
     <div class="relative w-80 container h-64 flex flex-col">

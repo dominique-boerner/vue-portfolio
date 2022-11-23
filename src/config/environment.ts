@@ -1,4 +1,5 @@
 export default {
   availableLanguages: ["de", "en"],
-  defaultLanguage: "de"
+  defaultLanguage: "de",
+  darkMode: false
 }

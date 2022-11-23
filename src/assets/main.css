@@ -49,14 +49,14 @@
     }
 
     .title {
-        @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges;
+        @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges dark:text-white transition ease-in-out delay-300;
     }
 
     .heading-2 {
-        @apply text-3xl text-center uppercase py-2 md:text-5xl md:text-left ;
+        @apply text-3xl text-center uppercase py-2 md:text-5xl md:text-left dark:text-white transition ease-in-out delay-300;
     }
 
     .article {
-        @apply text-center text-2xl md:text-left;
+        @apply text-center text-2xl md:text-left dark:text-white transition ease-in-out delay-300;
     }
 }
