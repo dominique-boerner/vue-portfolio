@@ -4,7 +4,6 @@ import {LottieAnimation} from "lottie-web-vue";
 import personAnimation from "@/assets/animations/24747-person-on-a-computer.json";
 import arrowAnimation from "@/assets/animations/120745-black-arrow-down.json";
 import {ref} from "vue";
-import Circle from "@/components/Circle.vue";
 
 const isButtonHovered = ref(false);
 
