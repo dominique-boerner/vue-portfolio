@@ -5,16 +5,17 @@ import './assets/main.css'
 import LottieAnimation from "lottie-web-vue";
 import {createI18n} from "vue-i18n";
 import de from "@/i18n/de.json";
+import en from "@/i18n/en.json";
+import environment from "@/config/environment";
 
 const app = createApp(App)
 
-
-
 const i18n = createI18n({
-  locale: "de",
+  locale: environment.defaultLanguage,
   messages: {
-    de
+    de, en
   },
+  globalInjection: true
 })
 
 app.use(router)

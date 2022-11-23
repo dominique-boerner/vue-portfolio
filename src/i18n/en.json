@@ -1,0 +1,22 @@
+
+{
+  "home": {
+    "header": {
+      "title": "Dominique Börner",
+      "text": "»Full-Stack Developer«",
+      "about-me": "About me"
+    },
+    "ux": {
+      "title": "Web development with focus on UI/UX design",
+      "text": "Web applications and websites should be developed as simply as possible for different user groups. I'm no stranger to A/B tests and user group analysis, and they're as much a part of front-end development as programming itself."
+    },
+    "testing": {
+      "title": "Test-driven development",
+      "text": "Red and green are not just traffic light colours for me, but a support for the development of qualitative software. That's why I rely mainly on Jest and Cypress for web applications."
+    },
+    "design-system": {
+      "title": "Implementation of design systems",
+      "text": "In order to give users the same feeling as possible about software, I develop design systems with the help of Storybook. I use the concept of Atomic Design to make elements reusable but flexible."
+    }
+  }
+}
