@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Sulphur Point";
+    src: url("@/assets/fonts/sulphur-point/SulphurPoint-Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Sulphur Point";
+    src: url("@/assets/fonts/sulphur-point/SulphurPoint-Light.otf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "Sulphur Point";
+    src: url("@/assets/fonts/sulphur-point/SulphurPoint-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Norges";
+    src: url("@/assets/fonts/norges-font/Norges.otf"), url("@/assets/fonts/norges-font/Norges.ttf");
+    font-weight: normal;
+}
+
+.font-sulphur-point {
+    font-family: "Sulphur Point", serif;
+}
+
+.font-norges {
+    font-family: "Norges", serif;
+}
+
+
+@layer components {
+    * {
+        @apply font-sulphur-point leading-10;
+    }
+
+    .btn {
+        @apply px-8 py-4 rounded-md uppercase cursor-pointer text-xl tracking-wide;
+    }
+
+    .btn-primary {
+        @apply bg-primary text-white;
+    }
+
+    .title {
+        @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges;
+    }
+
+    .heading-2 {
+        @apply text-3xl text-center uppercase py-2 md:text-5xl md:text-left ;
+    }
+
+    .article {
+        @apply text-center text-2xl md:text-left;
+    }
+}

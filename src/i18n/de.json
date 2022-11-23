@@ -1,0 +1,21 @@
+{
+  "home": {
+    "header": {
+      "title": "Dominique Börner",
+      "text": "»Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut efficitur turpis. Proin elementum lorem egestas tempor cursus. Fusce porta odio non elit tristique vulputate.«",
+      "about-me": "Über mich"
+    },
+    "ux": {
+      "title": "Webentwicklung mit Fokus auf UI/UX Design",
+      "text": "Webanwendungen und Webseiten sollten so einfach wie möglich für verschiedenste Nutzergruppen entwickelt werden. A/B-Tests und Nutzergruppenanalyse sind für mich kein Fremdwort und gehören zur Front-End Entwicklung genauso dazu, wie das programmieren an sich."
+    },
+    "testing": {
+      "title": "Testgetriebene Entwicklung",
+      "text": "Rot und Grün sind für mich nicht nur Ampelfarben, sondern eine Unterstützung bei der Entwicklung von Qualitativer Software. Deshalb setze ich bei Webanwendungen vor allem auf Jest und Cypress."
+    },
+    "design-system": {
+      "title": "Umsetzung von Design-Systemen",
+      "text": "Um den Nutzer*innen ein möglichst gleiches Gefühl von Software zu vermitteln, entwickle ich Design-Systeme mithilfe von Storybook. Hierbei setze ich vor allem auf das Konzept von Atomic Design um Elemente wiederverwendbar aber flexibel zu gestalten."
+    }
+  }
+}
