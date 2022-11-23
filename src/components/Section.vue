@@ -5,7 +5,7 @@ import {LottieAnimation} from "lottie-web-vue";
 interface Section {
   title: string;
   text: string;
-  animationData: JSON;
+  animationData: any;
 }
 
 defineProps<Section>()
