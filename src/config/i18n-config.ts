@@ -1,12 +1,11 @@
-import environment from "@/config/environment";
 import de from "@/i18n/de.json";
 import en from "@/i18n/en.json";
+import {getTranslation} from "@/util/translation.util";
 
 export default {
-
-  locale: environment.defaultLanguage,
+  locale: getTranslation(),
   messages: {
-    de, en
+    en, de
   },
   globalInjection: true
 }

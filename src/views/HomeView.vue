@@ -6,11 +6,7 @@ import testDrivenAnimation from "@/assets/animations/92460-checkmark-animation.j
 import designAnimation from "@/assets/animations/39434-designing-icon.json";
 import LanguagePicker from "@/components/LanguagePicker.vue";
 import environment from "@/config/environment";
-import {ref} from "vue";
-import de from "@/i18n/de.json";
-
-const selectedLanguage = ref("de")
-
+import {setTranslation} from "@/util/translation.util";
 </script>
 
 <template>
@@ -18,7 +14,7 @@ const selectedLanguage = ref("de")
     <div class="flex justify-end">
       <LanguagePicker :selected-language="$i18n.locale"
                       :available-languages="environment.availableLanguages"
-                      @select-language="$i18n.locale = $event"></LanguagePicker>
+                      @select-language="$i18n.locale = $event; setTranslation($event)"></LanguagePicker>
     </div>
     <Header/>
     <Section anchor="ux"
