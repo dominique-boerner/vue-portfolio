@@ -21,7 +21,8 @@ const selectedLanguage = ref("de")
                       @select-language="$i18n.locale = $event"></LanguagePicker>
     </div>
     <Header/>
-    <Section :animation-data="uiUxAnimation"
+    <Section anchor="ux"
+             :animation-data="uiUxAnimation"
              :title="$t('home.ux.title')"
              :text="$t('home.ux.text')"
     />

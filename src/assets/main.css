@@ -37,7 +37,7 @@
 
 @layer components {
     * {
-        @apply font-sulphur-point leading-10;
+        @apply font-sulphur-point leading-10 scroll-smooth;
     }
 
     .btn {
