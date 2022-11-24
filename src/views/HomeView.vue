@@ -2,8 +2,10 @@
 import Header from "@/components/Header.vue";
 import Section from "@/components/Section.vue";
 import uiUxAnimation from "@/assets/animations/95959-ux-and-ui-morphing-animation.json";
+import uiUxDarkAnimation from "@/assets/animations/95959-ux-and-ui-morphing-animation--dark-mode.json";
 import testDrivenAnimation from "@/assets/animations/92460-checkmark-animation.json";
 import designAnimation from "@/assets/animations/39434-designing-icon.json";
+import designDarkAnimation from "@/assets/animations/39434-designing-icon--dark-mode.json";
 import LanguagePicker from "@/components/LanguagePicker.vue";
 import environment from "@/config/environment";
 import {setTranslation} from "@/util/translation.util";
@@ -51,7 +53,7 @@ function animateThemeButton() {
       </div>
       <Header/>
       <Section anchor="ux"
-               :animation-data="uiUxAnimation"
+               :animation-data="darkMode ? uiUxDarkAnimation : uiUxAnimation"
                :title="$t('home.ux.title')"
                :text="$t('home.ux.text')"
       />
@@ -59,7 +61,7 @@ function animateThemeButton() {
                :title="$t('home.testing.title')"
                :text="$t('home.testing.text')"
       />
-      <Section :animation-data="designAnimation"
+      <Section :animation-data="darkMode ? designDarkAnimation : designAnimation"
                :title="$t('home.design-system.title')"
                :text="$t('home.design-system.text')"
       />
