@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import BoyHandDrawnFace from "@/components/icons/BoyHandDrawnFace.vue";
 import {LottieAnimation} from "lottie-web-vue";
 import personAnimation from "@/assets/animations/24747-person-on-a-computer.json";
-import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
-import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
+
 
 interface Header {
-  darkMode: boolean;
+  animationData: any
 }
 
 defineProps<Header>()
@@ -23,7 +21,7 @@ defineProps<Header>()
     <div class="relative w-80 container h-64 flex flex-col">
       <a class="btn flex justify-center items-center z-50 w-full" href="#ux">
         <lottie-animation class="h-48 transition ease-in-out hover:opacity-70"
-                          :key="darkMode" :animation-data="darkMode ? arrowDarkAnimation : arrowAnimation" :loop="true"></lottie-animation>
+                          :key="animationData" :animation-data="animationData" :loop="true"></lottie-animation>
       </a>
     </div>
   </div>

@@ -13,6 +13,8 @@ import {onMounted, ref} from "vue";
 import {LottieAnimation} from "lottie-web-vue";
 import themeToggleAnimation from "@/assets/animations/47369-toggle-dark-light.json";
 import {isDarkMode, setDarkMode} from "@/util/theme.util";
+import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
+import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
 
 const darkMode = ref(isDarkMode());
 let themeButton = ref();
@@ -51,7 +53,7 @@ function animateThemeButton() {
                         :available-languages="environment.availableLanguages"
                         @select-language="$i18n.locale = $event; setTranslation($event)"></LanguagePicker>
       </div>
-      <Header :dark-mode="darkMode"/>
+      <Header :dark-mode="darkMode" :animation-data="darkMode ? arrowDarkAnimation : arrowAnimation"/>
       <Section anchor="ux"
                :animation-data="darkMode ? uiUxDarkAnimation : uiUxAnimation"
                :title="$t('home.ux.title')"
