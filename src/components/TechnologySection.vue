@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import Tag from "@/components/Tag.vue";
+import type { Technology } from "@/types/technology";
 
 interface TechnologySection {
   title?: string;
-  technologies: string[];
+  technologies: Technology[];
 }
 
 defineProps<TechnologySection>();
