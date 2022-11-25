@@ -53,7 +53,11 @@ function animateThemeButton() {
                         :available-languages="environment.availableLanguages"
                         @select-language="$i18n.locale = $event; setTranslation($event)"></LanguagePicker>
       </div>
-      <Header :dark-mode="darkMode" :animation-data="darkMode ? arrowDarkAnimation : arrowAnimation"/>
+      <Header :dark-mode="darkMode" 
+              :animation-data="darkMode ? arrowDarkAnimation : arrowAnimation"
+              :title="$t('home.header.title')"
+              :text="$t('home.header.text')"
+      />
       <Section anchor="ux"
                :animation-data="darkMode ? uiUxDarkAnimation : uiUxAnimation"
                :title="$t('home.ux.title')"
