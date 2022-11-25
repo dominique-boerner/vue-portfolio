@@ -15,6 +15,7 @@ import themeToggleAnimation from "@/assets/animations/47369-toggle-dark-light.js
 import {isDarkMode, setDarkMode} from "@/util/theme.util";
 import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
 import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
+import TechnologySection from "@/components/TechnologySection.vue";
 
 const darkMode = ref(isDarkMode());
 let themeButton = ref();
@@ -71,6 +72,7 @@ function animateThemeButton() {
                :title="$t('home.design-system.title')"
                :text="$t('home.design-system.text')"
       />
+      <TechnologySection />
     </div>
   </div>
 </template>
