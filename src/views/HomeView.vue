@@ -61,7 +61,7 @@ function animateThemeButton() {
 <template>
   <div :class="darkMode ? 'dark' : 'light'">
     <div
-      class="min-h-screen -z-10 bg-body dark:bg-gray-900 transition ease-in-out delay-300"
+      class="min-h-screen -z-10 pt-2 bg-body dark:bg-gray-900 transition ease-in-out delay-300"
     >
       <div class="flex justify-between">
         <button class="ml-4 w-32 select-none" @click="toggleDarkMode()">
