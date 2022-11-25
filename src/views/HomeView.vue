@@ -8,26 +8,41 @@ import designAnimation from "@/assets/animations/39434-designing-icon.json";
 import designDarkAnimation from "@/assets/animations/39434-designing-icon--dark-mode.json";
 import LanguagePicker from "@/components/LanguagePicker.vue";
 import environment from "@/config/environment";
-import {setTranslation} from "@/util/translation.util";
-import {onMounted, ref} from "vue";
-import {LottieAnimation} from "lottie-web-vue";
+import { setTranslation } from "@/util/translation.util";
+import { onMounted, ref } from "vue";
+import { LottieAnimation } from "lottie-web-vue";
 import themeToggleAnimation from "@/assets/animations/47369-toggle-dark-light.json";
-import {isDarkMode, setDarkMode} from "@/util/theme.util";
+import { isDarkMode, setDarkMode } from "@/util/theme.util";
 import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
 import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
 import TechnologySection from "@/components/TechnologySection.vue";
+
+const technologies: string[] = [
+  "ReactJS",
+  "Angular",
+  "Storybook",
+  "PHP",
+  "SCSS",
+  "Jest",
+  "Karma",
+  "Cypress",
+  "TailwindCSS",
+  "TypeScript",
+  "NestJS",
+  "Java",
+];
 
 const darkMode = ref(isDarkMode());
 let themeButton = ref();
 
 onMounted(() => {
-  animateThemeButton()
-})
+  animateThemeButton();
+});
 
 function toggleDarkMode() {
   darkMode.value = !darkMode.value;
   setDarkMode(darkMode.value);
-  animateThemeButton()
+  animateThemeButton();
 }
 
 function animateThemeButton() {
@@ -39,40 +54,56 @@ function animateThemeButton() {
     themeButton.value.play();
   }
 }
-
 </script>
 
 <template>
   <div :class="darkMode ? 'dark' : 'light'">
-    <div class="min-h-screen -z-10 py-4 bg-body dark:bg-gray-900 transition ease-in-out delay-300">
+    <div
+      class="min-h-screen -z-10 py-4 bg-body dark:bg-gray-900 transition ease-in-out delay-300"
+    >
       <div class="flex justify-between">
         <button class="ml-4 w-32 select-none" @click="toggleDarkMode()">
-          <lottie-animation ref="themeButton" :animation-data="themeToggleAnimation"
-                            :auto-play="false"></lottie-animation>
+          <lottie-animation
+            ref="themeButton"
+            :animation-data="themeToggleAnimation"
+            :auto-play="false"
+          ></lottie-animation>
         </button>
-        <LanguagePicker :selected-language="$i18n.locale"
-                        :available-languages="environment.availableLanguages"
-                        @select-language="$i18n.locale = $event; setTranslation($event)"></LanguagePicker>
+        <LanguagePicker
+          :selected-language="$i18n.locale"
+          :available-languages="environment.availableLanguages"
+          @select-language="
+            $i18n.locale = $event;
+            setTranslation($event);
+          "
+        ></LanguagePicker>
       </div>
-      <Header :dark-mode="darkMode" 
-              :animation-data="darkMode ? arrowDarkAnimation : arrowAnimation"
-              :title="$t('home.header.title')"
-              :text="$t('home.header.text')"
+      <Header
+        :dark-mode="darkMode"
+        :animation-data="darkMode ? arrowDarkAnimation : arrowAnimation"
+        :title="$t('home.header.title')"
+        :text="$t('home.header.text')"
       />
-      <Section anchor="ux"
-               :animation-data="darkMode ? uiUxDarkAnimation : uiUxAnimation"
-               :title="$t('home.ux.title')"
-               :text="$t('home.ux.text')"
+      <Section
+        anchor="ux"
+        :animation-data="darkMode ? uiUxDarkAnimation : uiUxAnimation"
+        :title="$t('home.ux.title')"
+        :text="$t('home.ux.text')"
       />
-      <Section :animation-data="testDrivenAnimation"
-               :title="$t('home.testing.title')"
-               :text="$t('home.testing.text')"
+      <Section
+        :animation-data="testDrivenAnimation"
+        :title="$t('home.testing.title')"
+        :text="$t('home.testing.text')"
       />
-      <Section :animation-data="darkMode ? designDarkAnimation : designAnimation"
-               :title="$t('home.design-system.title')"
-               :text="$t('home.design-system.text')"
+      <Section
+        :animation-data="darkMode ? designDarkAnimation : designAnimation"
+        :title="$t('home.design-system.title')"
+        :text="$t('home.design-system.text')"
       />
-      <TechnologySection />
+      <TechnologySection
+        :title="$t('home.technologies.title')"
+        :technologies="technologies"
+      />
     </div>
   </div>
 </template>

@@ -17,6 +17,9 @@
     "design-system": {
       "title": "Implementation of design systems",
       "text": "In order to give users the same feeling as possible about software, I develop design systems with the help of Storybook. I use the concept of Atomic Design to make elements reusable but flexible."
+    },
+    "technologies": {
+      "title": "My technologies"
     }
   }
 }

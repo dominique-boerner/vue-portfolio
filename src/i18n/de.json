@@ -16,6 +16,9 @@
     "design-system": {
       "title": "Umsetzung von Design-Systemen",
       "text": "Um den Nutzer*innen ein möglichst gleiches Gefühl von Software zu vermitteln, entwickle ich Design-Systeme mithilfe von Storybook. Hierbei setze ich vor allem auf das Konzept von Atomic Design um Elemente wiederverwendbar aber flexibel zu gestalten."
+    },
+    "technologies": {
+      "title": "Meine Technologien"
     }
   }
 }
