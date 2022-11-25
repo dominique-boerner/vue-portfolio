@@ -2,6 +2,8 @@
 
 This repository is the official repository for my portfolio - and my first approach in using Vue 3 with websites.
 
+URL: https://mukosoft.github.io/vue-portfolio/
+
 ## Project Setup
 
 ```sh
