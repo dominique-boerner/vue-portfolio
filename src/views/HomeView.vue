@@ -17,6 +17,7 @@ import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
 import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
 import TechnologySection from "@/components/TechnologySection.vue";
 import type { Technology } from "@/types/technology";
+import Footer from "@/components/Footer.vue";
 
 const technologies: Technology[] = [
   "ReactJS",
@@ -60,7 +61,7 @@ function animateThemeButton() {
 <template>
   <div :class="darkMode ? 'dark' : 'light'">
     <div
-      class="min-h-screen -z-10 py-4 bg-body dark:bg-gray-900 transition ease-in-out delay-300"
+      class="min-h-screen -z-10 bg-body dark:bg-gray-900 transition ease-in-out delay-300"
     >
       <div class="flex justify-between">
         <button class="ml-4 w-32 select-none" @click="toggleDarkMode()">
@@ -105,6 +106,7 @@ function animateThemeButton() {
         :title="$t('home.technologies.title')"
         :technologies="technologies"
       />
+      <Footer class="mt-12" />
     </div>
   </div>
 </template>
