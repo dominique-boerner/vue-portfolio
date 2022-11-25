@@ -16,7 +16,7 @@ import { isDarkMode, setDarkMode } from "@/util/theme.util";
 import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
 import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
 import TechnologySection from "@/components/TechnologySection.vue";
-import { Technology } from "@/types/technology";
+import type { Technology } from "@/types/technology";
 
 const technologies: Technology[] = [
   "ReactJS",
