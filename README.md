@@ -1,8 +1,10 @@
 # Dominique Börner - Portfolio page
 
+[![Deploy Front-End](https://github.com/dominique-boerner/vue-portfolio/actions/workflows/deploy-frontend.yml/badge.svg)](https://github.com/dominique-boerner/vue-portfolio/actions/workflows/deploy-frontend.yml)
+
 This repository is the official repository for my portfolio - and my first approach in using Vue 3 with websites.
 
-URL: https://mukosoft.github.io/vue-portfolio/
+URL: https://dominiqueboerner.me
 
 ## Project Setup
 
