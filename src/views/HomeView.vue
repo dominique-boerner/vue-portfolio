@@ -59,12 +59,16 @@ function animateThemeButton() {
 </script>
 
 <template>
-  <div :class="darkMode ? 'dark' : 'light'">
+  <div :class="darkMode ? 'dark' : 'light'" data-cy="home-body">
     <div
       class="min-h-screen -z-10 pt-2 bg-body dark:bg-gray-900 transition ease-in-out delay-300"
     >
       <div class="flex justify-between">
-        <button class="ml-4 w-32 select-none" @click="toggleDarkMode()">
+        <button
+          class="ml-4 w-32 select-none"
+          @click="toggleDarkMode()"
+          data-cy="theme-toggle-button"
+        >
           <lottie-animation
             ref="themeButton"
             :animation-data="themeToggleAnimation"
