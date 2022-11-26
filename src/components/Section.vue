@@ -31,6 +31,7 @@ defineProps<Section>();
         <h2 class="heading-2">{{ title }}</h2>
         <article class="article">{{ text }}</article>
         <a
+          v-if="nextAnchorAnimationData"
           class="flex justify-center items-center z-50 mt-4 md:justify-start"
           :href="`#${nextAnchorHref}`"
         >
