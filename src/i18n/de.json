@@ -2,16 +2,16 @@
   "home": {
     "header": {
       "title": "Dominique Börner",
-      "text": "Bereits mit 14 Jahren habe ich meine Leidenschaft für Webdesign und Webentwicklung entdeckt. Während der Ausbildung auch unter dem Spitznamen »Meister Bling-Bling« bekannt, wuchs mein Drang mich immer tiefer und tiefer in die Thematik einzuarbeiten. Während der Zeit des mobilen wandels aufgewachsen zu sein half mir dabei. So sind »Mobile First« und »Responsive Design« kein Fremdwort, sondern gehören zum Standard.",
+      "text": "Bereits mit 14 Jahren habe ich meine Leidenschaft für Webdesign und Webentwicklung entdeckt. Während der Ausbildung auch unter dem Spitznamen »Meister Bling-Bling« bekannt, wuchs mein Drang mich immer tiefer und tiefer in die Thematik einzuarbeiten. Während der Zeit des mobilen wandels aufgewachsen zu sein half mir dabei. So sind »Mobile First« und »Responsive Design« für mich gang und gäbe und gehören zum Standard.",
       "about-me": "Über mich"
     },
     "ux": {
       "title": "Webentwicklung mit Fokus auf UI/UX Design",
-      "text": "Webanwendungen und Webseiten sollten so einfach wie möglich für verschiedenste Nutzergruppen entwickelt werden. A/B-Tests und Nutzergruppenanalyse sind für mich kein Fremdwort und gehören zur Front-End Entwicklung genauso dazu, wie das programmieren an sich."
+      "text": "Webanwendungen und Webseiten sollten so einfach wie möglich für verschiedenste Nutzergruppen entwickelt werden. A/B-Tests und Nutzergruppenanalyse sind für mich keine Fremdworte und gehören zur Front-End Entwicklung genauso dazu, wie das programmieren an sich."
     },
     "testing": {
       "title": "Testgetriebene Entwicklung",
-      "text": "Rot und Grün sind für mich nicht nur Ampelfarben, sondern eine Unterstützung bei der Entwicklung von Qualitativer Software. Deshalb setze ich bei Webanwendungen vor allem auf Jest und Cypress."
+      "text": "Rot und Grün sind für mich nicht nur Ampelfarben, sondern eine Unterstützung bei der Entwicklung von qualitativer Software. Deshalb setze ich bei Webanwendungen vor allem auf Jest und Cypress."
     },
     "design-system": {
       "title": "Umsetzung von Design-Systemen",
