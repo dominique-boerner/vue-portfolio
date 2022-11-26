@@ -92,16 +92,26 @@ function animateThemeButton() {
       />
       <Section
         anchor="ux"
+        next-anchor-href="testing"
+        :next-anchor-animation-data="
+          darkMode ? arrowDarkAnimation : arrowAnimation
+        "
         :animation-data="darkMode ? uiUxDarkAnimation : uiUxAnimation"
         :title="$t('home.ux.title')"
         :text="$t('home.ux.text')"
       />
       <Section
+        anchor="testing"
+        next-anchor-href="design-system"
+        :next-anchor-animation-data="
+          darkMode ? arrowDarkAnimation : arrowAnimation
+        "
         :animation-data="testDrivenAnimation"
         :title="$t('home.testing.title')"
         :text="$t('home.testing.text')"
       />
       <Section
+        anchor="design-system"
         :animation-data="darkMode ? designDarkAnimation : designAnimation"
         :title="$t('home.design-system.title')"
         :text="$t('home.design-system.text')"
