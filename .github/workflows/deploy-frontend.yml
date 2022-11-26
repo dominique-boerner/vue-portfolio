@@ -1,0 +1,55 @@
+name: Deploy Front-End
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 16.x ]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          anode-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm i
+        # TODO: unit-testing and E2E testing
+#      - run: npm run test
+#      - run: |
+#          sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+#          npx cypress install
+#          echo "e2e testing"
+#          npm run test:e2e
+      - run: npm run build
+      - name: copy file via ssh password
+        uses: garygrossgarten/github-action-scp@release
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          local: "dist"
+          rmRemote: true
+          remote: "/"
+          # TODO: write .htaccess
+#      - name: copy .htaccess file via ssh password
+#        uses: garygrossgarten/github-action-scp@release
+#        with:
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.USERNAME }}
+#          password: ${{ secrets.PASSWORD }}
+#          local: ".htaccess"
+#          remote: "/"
+#          dotfiles: true
