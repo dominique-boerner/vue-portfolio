@@ -41,13 +41,3 @@ jobs:
           local: "dist"
           rmRemote: true
           remote: "/"
-      - name: copy .htaccess file via ssh password
-        uses: garygrossgarten/github-action-scp@release
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          local: ".htaccess"
-          remote: "/"
-          rmRemote: true
-          dotfiles: true
