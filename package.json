@@ -10,7 +10,6 @@
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "deploy:gh-pages": "deploy.sh"
   },
   "dependencies": {
     "vue": "^3.2.41",
