@@ -32,6 +32,7 @@ jobs:
           echo "e2e testing"
           npm run test:e2e
       - run: npm run build
+      - run: cp ".htaccess" "dist/"
       - name: copy file via ssh password
         uses: garygrossgarten/github-action-scp@release
         with:
