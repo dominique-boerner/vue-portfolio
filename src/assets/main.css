@@ -53,7 +53,5 @@
         @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges dark:text-white transition ease-in-out delay-300;
     }
 
-    .article {
-        @apply text-center text-2xl md:text-left dark:text-white transition ease-in-out delay-300;
-    }
+
 }

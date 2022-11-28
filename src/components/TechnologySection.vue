@@ -4,6 +4,7 @@ import type { Technology } from "@/types/technology";
 import H2 from "@/components/atoms/Heading.vue";
 import Heading2 from "@/components/atoms/Heading.vue";
 import Heading from "@/components/atoms/Heading.vue";
+import Text from "@/components/atoms/Text.vue";
 
 interface TechnologySection {
   title: string;
@@ -18,9 +19,9 @@ defineProps<TechnologySection>();
     <Heading>
       {{ title }}
     </Heading>
-    <article class="article text-center mb-2 mx-4 md:w-6/12">
+    <Text class="md:text-center mb-2 mx-4 md:w-8/12">
       {{ text }}
-    </article>
+    </Text>
     <div class="flex justify-center flex-wrap w-full md:w-6/12">
       <Tag v-for="tech in technologies" class="appearing-tag" :label="tech" />
     </div>
