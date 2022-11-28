@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { LottieAnimation } from "lottie-web-vue";
+import Heading from "@/components/atoms/Heading.vue";
 
 interface Section {
   title: string;
@@ -28,7 +29,7 @@ defineProps<Section>();
         :speed="0.5"
       ></lottie-animation>
       <div class="flex flex-col w-9/12">
-        <h2 class="heading-2">{{ title }}</h2>
+        <Heading>{{ title }}</Heading>
         <article class="article">{{ text }}</article>
         <a
           v-if="nextAnchorAnimationData"
