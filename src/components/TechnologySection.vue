@@ -18,7 +18,6 @@ defineProps<TechnologySection>();
     <Heading>
       {{ title }}
     </Heading>
-    <h2 class="heading-2"></h2>
     <article class="article text-center mb-2 mx-4 md:w-6/12">
       {{ text }}
     </article>
