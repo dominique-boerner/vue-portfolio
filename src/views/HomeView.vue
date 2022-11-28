@@ -118,6 +118,7 @@ function animateThemeButton() {
       />
       <TechnologySection
         :title="$t('home.technologies.title')"
+        :text="$t('home.technologies.text')"
         :technologies="technologies"
       />
       <Footer class="mt-12" />
