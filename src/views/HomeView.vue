@@ -18,6 +18,7 @@ import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.
 import TechnologySection from "@/components/templates/TechnologySection.vue";
 import type { Technology } from "@/types/technology";
 import Footer from "@/components/templates/Footer.vue";
+import Slider from "@/components/molecules/Slider.vue";
 
 const technologies: Technology[] = [
   "ReactJS",
@@ -100,6 +101,7 @@ function animateThemeButton() {
         :title="$t('home.ux.title')"
         :text="$t('home.ux.text')"
       />
+      <!--      <Slider />-->
       <Section
         anchor="testing"
         next-anchor-href="design-system"
