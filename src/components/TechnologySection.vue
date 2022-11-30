@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Tag from "@/components/Tag.vue";
+import Tag from "@/components/atoms/Tag.vue";
 import type { Technology } from "@/types/technology";
 import H2 from "@/components/atoms/Heading.vue";
 import Heading2 from "@/components/atoms/Heading.vue";
