@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Header from "@/components/Header.vue";
-import Section from "@/components/Section.vue";
+import Header from "@/components/templates/Header.vue";
+import Section from "@/components/templates/Section.vue";
 import uiUxAnimation from "@/assets/animations/95959-ux-and-ui-morphing-animation.json";
 import uiUxDarkAnimation from "@/assets/animations/95959-ux-and-ui-morphing-animation--dark-mode.json";
 import testDrivenAnimation from "@/assets/animations/92460-checkmark-animation.json";
 import designAnimation from "@/assets/animations/39434-designing-icon.json";
 import designDarkAnimation from "@/assets/animations/39434-designing-icon--dark-mode.json";
-import LanguagePicker from "@/components/LanguagePicker.vue";
+import LanguagePicker from "@/components/molecules/LanguagePicker.vue";
 import environment from "@/config/environment";
 import { setTranslation } from "@/util/translation.util";
 import { onMounted, ref } from "vue";
@@ -15,9 +15,9 @@ import themeToggleAnimation from "@/assets/animations/47369-toggle-dark-light.js
 import { isDarkMode, setDarkMode } from "@/util/theme.util";
 import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
 import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
-import TechnologySection from "@/components/TechnologySection.vue";
+import TechnologySection from "@/components/templates/TechnologySection.vue";
 import type { Technology } from "@/types/technology";
-import Footer from "@/components/Footer.vue";
+import Footer from "@/components/templates/Footer.vue";
 
 const technologies: Technology[] = [
   "ReactJS",
