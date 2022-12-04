@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
 import { useScroll } from "@/composables/useScroll";
-import Fab from "@/components/atoms/fab.vue";
+import Fab from "@/components/atoms/Fab.vue";
 
 const scroll = useScroll();
 
