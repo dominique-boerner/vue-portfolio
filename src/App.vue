@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import { useScoll } from "@/composables/useScroll";
+import { useScroll } from "@/composables/useScroll";
 import Fab from "@/components/atoms/fab.vue";
 
-const scroll = useScoll();
+const scroll = useScroll();
 
 function scrollTop() {
   window.scrollTo({

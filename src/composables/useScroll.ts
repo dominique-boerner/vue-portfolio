@@ -1,6 +1,6 @@
 import { onMounted, ref } from "vue";
 
-export function useScoll() {
+export function useScroll() {
   const y = ref(0);
 
   function update(event: Event) {
