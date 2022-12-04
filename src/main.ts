@@ -9,10 +9,11 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
+  faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-const icons = [faChevronLeft, faChevronRight];
+const icons = [faChevronLeft, faChevronRight, faChevronUp];
 
 icons.forEach((icon) => library.add(icon));
 
