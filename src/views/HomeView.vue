@@ -16,24 +16,8 @@ import { isDarkMode, setDarkMode } from "@/util/theme.util";
 import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
 import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
 import TechnologySection from "@/components/templates/TechnologySection.vue";
-import type { Technology } from "@/types/technology";
 import Footer from "@/components/templates/Footer.vue";
-import { useScroll } from "@/composables/useScroll";
-
-const technologies: Technology[] = [
-  "ReactJS",
-  "Angular",
-  "Storybook",
-  "PHP",
-  "SCSS",
-  "Jest",
-  "Karma",
-  "Cypress",
-  "TailwindCSS",
-  "TypeScript",
-  "NestJS",
-  "Java",
-];
+import {technologies} from "@/technologies";
 
 const darkMode = ref(isDarkMode());
 let themeButton = ref();
