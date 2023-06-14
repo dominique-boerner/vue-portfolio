@@ -1,28 +1,39 @@
 import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import "./assets/main.css";
-import LottieAnimation from "lottie-web-vue";
 import { createI18n } from "vue-i18n";
-import i18nConfig from "@/config/i18n-config";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import LottieAnimation from "lottie-web-vue";
 import {
   faChevronLeft,
   faChevronRight,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { createPinia } from "pinia";
 
-const icons = [faChevronLeft, faChevronRight, faChevronUp];
+import App from "./App.vue";
+import router from "./router";
+import i18nConfig from "@/config/i18n-config";
 
-icons.forEach((icon) => library.add(icon));
+import "./assets/main.css";
 
 const app = createApp(App);
 
+// router
 app.use(router);
+
+// lottie
 app.use(LottieAnimation);
+
+// i18n
 app.use(createI18n(i18nConfig));
 
+// pinia
+const pinia = createPinia();
+app.use(pinia);
+
+// icons
+const icons = [faChevronLeft, faChevronRight, faChevronUp];
+icons.forEach((icon) => library.add(icon));
 app.component("font-awesome-icon", FontAwesomeIcon);
 
 app.mount("#app");

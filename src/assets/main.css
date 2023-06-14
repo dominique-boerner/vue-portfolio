@@ -50,7 +50,7 @@
     }
 
     .title {
-        @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges dark:text-white transition ease-in-out delay-300;
+        @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges dark:text-white ;
     }
 
 

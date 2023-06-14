@@ -23,7 +23,7 @@ defineProps<Header>();
     <div class="relative w-80 container h-64 flex flex-col">
       <a class="btn flex justify-center items-center z-50 w-full" href="#ux">
         <lottie-animation
-          class="h-20 transition ease-in-out hover:opacity-70"
+          class="h-20 hover:opacity-70"
           :key="animationData"
           :animation-data="animationData"
           :loop="true"

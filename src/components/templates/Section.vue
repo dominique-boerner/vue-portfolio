@@ -38,7 +38,7 @@ defineProps<Section>();
           :href="`#${nextAnchorHref}`"
         >
           <lottie-animation
-            class="h-20 transition ease-in-out hover:opacity-70"
+            class="h-20 hover:opacity-70"
             :key="nextAnchorAnimationData"
             :animation-data="nextAnchorAnimationData"
             :loop="true"

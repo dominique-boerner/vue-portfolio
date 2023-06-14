@@ -1,12 +1,14 @@
 import { onMounted, ref } from "vue";
 
+/**
+ * Returns the current scroll position of the window.
+ */
 export function useScroll() {
   const y = ref(0);
 
   function update(event: Event) {
     const document = event.target as Document;
-    const scrollTop = document.scrollingElement?.scrollTop ?? 0;
-    y.value = scrollTop;
+    y.value = document.scrollingElement?.scrollTop ?? 0;
   }
 
   onMounted(() => {
