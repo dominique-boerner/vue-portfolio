@@ -6,6 +6,6 @@ export function getTranslation(): string {
   return localStorage.getItem(I18N_LANGUAGE_KEY) ?? environment.defaultLanguage
 }
 
-export function setTranslation(translation: string) {
+export function setTranslationLocalStorage(translation: string) {
   localStorage.setItem(I18N_LANGUAGE_KEY, translation)
 }

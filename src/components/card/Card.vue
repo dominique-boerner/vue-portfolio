@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { toRefs } from "vue"
+import PText from "@/components/PText/PText.vue"
 
 interface CardProps {
   imgSrc?: string
@@ -22,16 +23,16 @@ const hasMain = () => {
 
 <template>
   <section
-    class="border-4 border-white bg-white rounded-md shadow-md cursor-pointer transition hover:shadow-lg dark:border-primary-contrast dark:bg-primary"
+    class="cursor-pointer rounded-md border-4 border-white bg-white shadow-md transition hover:shadow-lg dark:border-primary-contrast dark:bg-primary"
   >
     <header v-if="hasHeader()">
       <img class="w-full object-cover" alt="" :src="imgSrc" />
     </header>
     <main v-if="hasMain()" class="flex flex-col px-4 py-4">
-      <Text type="heading1" class="font-bold">{{ title }}</Text>
-      <Text class="my-2" type="body1">
+      <PText type="heading1" class="font-bold">{{ title }}</PText>
+      <PText class="my-2" type="body1">
         {{ text }}
-      </Text>
+      </PText>
     </main>
   </section>
 </template>

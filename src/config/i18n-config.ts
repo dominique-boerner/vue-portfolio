@@ -3,6 +3,7 @@ import en from "@/i18n/en.json"
 import { getTranslation } from "@/util/translation.util"
 
 export default {
+  legacy: false,
   locale: getTranslation(),
   messages: {
     en,
