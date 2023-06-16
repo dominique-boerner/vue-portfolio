@@ -32,7 +32,7 @@ function animateThemeButton() {
 <template>
   <div class="flex justify-between dark:bg-primary dark:text-body">
     <button
-      class="ml-4 w-32 select-none"
+      class="w-32 select-none"
       @click="toggleTheme()"
       data-cy="theme-toggle-button"
     >

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Tag from "@/components/atoms/Tag.vue";
 import type { Technology } from "@/types/technology";
-import Text from "@/components/Text/Text.vue";
+import Text from "@/components/PText/PText.vue";
 
 interface TechnologySection {
   title: string;

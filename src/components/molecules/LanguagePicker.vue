@@ -9,7 +9,7 @@ defineEmits(["select-language"]);
 </script>
 <template>
   <div
-    class="flex justify-evenly items-center border border-primary rounded-full mr-4 px-1 dark:border-white select-none"
+    class="flex justify-evenly items-center border border-primary rounded-full px-1 dark:border-white select-none"
   >
     <span
       v-for="language of availableLanguages"

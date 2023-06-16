@@ -3,7 +3,13 @@
  * The definition of the sizes can be found in the TailwindCSS configuration.
  * @see tailwind.config.js
  */
-export type TextType = "title" | "heading1" | "heading2" | "heading3" | "body1";
+export type TextType =
+  | "title"
+  | "heading1"
+  | "heading2"
+  | "heading3"
+  | "body1"
+  | "body2";
 
 /**
  * The font is determined on the basis of the font. The definition of

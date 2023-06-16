@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Font, TextType } from "@/components/Text/textType";
+import type { Font, TextType } from "@/components/PText/textType";
 import { computed, ComputedRef, toRefs } from "vue";
 
 interface TextProps {
@@ -24,6 +24,7 @@ const getClass: ComputedRef<string> = computed(() => {
     heading3: "text-heading3",
     title: "text-title leading-relaxed",
     body1: "text-body1 leading-8",
+    body2: "text-body2 leading-6",
   };
 
   const fontClassLookup: Record<Font, string> = {
@@ -49,6 +50,7 @@ const tag: ComputedRef<string> = computed(() => {
     heading2: "h2",
     heading1: "h1",
     body1: "p",
+    body2: "p",
     title: "span",
   };
 

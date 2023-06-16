@@ -4,6 +4,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      maxWidth: {
+        portfolio: "1400px",
+      },
       fontFamily: {
         default: ["Sulphur Point"],
         display: ["Norges"],
@@ -14,6 +17,7 @@ module.exports = {
         heading3: "1.8rem",
         title: "6rem",
         body1: "1.45rem",
+        body2: "1.2rem",
       },
       colors: {
         primary: "#05060C",

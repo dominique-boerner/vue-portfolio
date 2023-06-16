@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { LottieAnimation } from "lottie-web-vue";
 import personAnimation from "@/assets/animations/24747-person-on-a-computer.json";
-import Text from "@/components/Text/Text.vue";
+import Text from "@/components/PText/PText.vue";
 
 interface Header {
   animationData: any;

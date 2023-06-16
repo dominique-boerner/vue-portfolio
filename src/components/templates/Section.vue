@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { LottieAnimation } from "lottie-web-vue";
-import Text from "@/components/Text/Text.vue";
+import Text from "@/components/PText/PText.vue";
 
 interface Section {
   title: string;

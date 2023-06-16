@@ -9,7 +9,6 @@ import designDarkAnimation from "@/assets/animations/39434-designing-icon--dark-
 import arrowAnimation from "@/assets/animations/75206-arrow-down.json";
 import arrowDarkAnimation from "@/assets/animations/75206-arrow-down--dark-mode.json";
 import TechnologySection from "@/components/templates/TechnologySection.vue";
-import Footer from "@/components/templates/Footer.vue";
 import { technologies } from "@/technologies";
 import { computed } from "vue";
 import { useThemeStore } from "@/stores/theme.store";
@@ -59,7 +58,6 @@ const state = computed(() => ({
         :text="$t('home.technologies.text')"
         :technologies="technologies"
       />
-      <Footer class="mt-12" />
     </div>
   </div>
 </template>
