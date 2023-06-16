@@ -1,11 +1,11 @@
 <script setup lang="ts">
 interface LanguagePicker {
-  selectedLanguage: string;
-  availableLanguages: string[];
+  selectedLanguage: string
+  availableLanguages: string[]
 }
 
-defineProps<LanguagePicker>();
-defineEmits(["select-language"]);
+defineProps<LanguagePicker>()
+defineEmits(["select-language"])
 </script>
 <template>
   <div

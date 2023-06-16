@@ -9,10 +9,10 @@ export type TextType =
   | "heading2"
   | "heading3"
   | "body1"
-  | "body2";
+  | "body2"
 
 /**
  * The font is determined on the basis of the font. The definition of
  * the fonts can be found in the TailwindCSS configuration.
  */
-export type Font = "default" | "display";
+export type Font = "default" | "display"

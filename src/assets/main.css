@@ -3,55 +3,52 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Sulphur Point";
-    src: url("@/assets/fonts/sulphur-point/SulphurPoint-Regular.otf");
-    font-weight: normal;
+  font-family: "Sulphur Point";
+  src: url("@/assets/fonts/sulphur-point/SulphurPoint-Regular.otf");
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: "Sulphur Point";
-    src: url("@/assets/fonts/sulphur-point/SulphurPoint-Light.otf");
-    font-weight: light;
+  font-family: "Sulphur Point";
+  src: url("@/assets/fonts/sulphur-point/SulphurPoint-Light.otf");
+  font-weight: 100;
 }
 
 @font-face {
-    font-family: "Sulphur Point";
-    src: url("@/assets/fonts/sulphur-point/SulphurPoint-Bold.otf");
-    font-weight: bold;
+  font-family: "Sulphur Point";
+  src: url("@/assets/fonts/sulphur-point/SulphurPoint-Bold.otf");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: "Norges";
-    src: url("@/assets/fonts/norges-font/Norges.ttf");
-    font-weight: normal;
+  font-family: "Norges";
+  src: url("@/assets/fonts/norges-font/Norges.ttf");
+  font-weight: normal;
 }
 
 .font-sulphur-point {
-    font-family: "Sulphur Point", serif;
+  font-family: "Sulphur Point", serif;
 }
 
 .font-norges {
-    font-family: "Norges", serif;
+  font-family: "Norges", serif;
 }
 
-
 @layer components {
-    * {
-        -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-        @apply font-sulphur-point leading-10 scroll-smooth;
-    }
+  * {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    @apply font-sulphur-point leading-10 scroll-smooth;
+  }
 
-    .btn {
-        @apply px-8 py-4 rounded-md uppercase cursor-pointer text-xl tracking-wide;
-    }
+  .btn {
+    @apply px-8 py-4 rounded-md uppercase cursor-pointer text-xl tracking-wide;
+  }
 
-    .btn-primary {
-        @apply bg-primary text-white;
-    }
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
 
-    .title {
-        @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges dark:text-white ;
-    }
-
-
+  .title {
+    @apply text-4xl md:text-8xl text-primary font-bold my-6 font-norges dark:text-white;
+  }
 }

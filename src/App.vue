@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
-import { useScroll } from "@/composables/useScroll";
-import Fab from "@/components/atoms/Fab.vue";
-import NavBar from "@/components/navbar/NavBar.vue";
-import { useThemeStore } from "@/stores/theme.store";
-import Footer from "@/components/templates/Footer.vue";
+import { RouterView } from "vue-router"
+import { useScroll } from "@/composables/useScroll"
+import Fab from "@/components/atoms/Fab.vue"
+import NavBar from "@/components/navbar/NavBar.vue"
+import { useThemeStore } from "@/stores/theme.store"
+import Footer from "@/components/templates/Footer.vue"
 
-const scroll = useScroll();
-const themeStore = useThemeStore();
+const scroll = useScroll()
+const themeStore = useThemeStore()
 
 function scrollTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
-  });
+  })
 }
 </script>
 

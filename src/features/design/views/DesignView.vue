@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Text from "@/components/PText/PText.vue";
-import Card from "@/components/card/Card.vue";
-import TypographyImg from "@/assets/design/typography.png";
+import Text from "@/components/PText/PText.vue"
+import Card from "@/components/card/Card.vue"
+import TypographyImg from "@/assets/design/typography.png"
 </script>
 
 <template>

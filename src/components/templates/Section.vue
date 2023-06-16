@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { LottieAnimation } from "lottie-web-vue";
-import Text from "@/components/PText/PText.vue";
+import { LottieAnimation } from "lottie-web-vue"
+import Text from "@/components/PText/PText.vue"
 
 interface Section {
-  title: string;
-  text: string;
-  animationData: any;
-  anchor?: string;
-  nextAnchorAnimationData?: any;
-  nextAnchorHref?: string;
+  title: string
+  text: string
+  animationData: any
+  anchor?: string
+  nextAnchorAnimationData?: any
+  nextAnchorHref?: string
 }
 
-defineProps<Section>();
+defineProps<Section>()
 </script>
 <template>
   <div

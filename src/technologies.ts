@@ -1,4 +1,4 @@
-import type { Technology } from "@/types/technology";
+import type { Technology } from "@/types/technology"
 
 export const technologies: Technology[] = [
   "ReactJS",
@@ -13,4 +13,4 @@ export const technologies: Technology[] = [
   "TypeScript",
   "NestJS",
   "Java",
-];
+]

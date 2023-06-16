@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import Tag from "@/components/atoms/Tag.vue";
-import type { Technology } from "@/types/technology";
-import Text from "@/components/PText/PText.vue";
+import Tag from "@/components/atoms/Tag.vue"
+import type { Technology } from "@/types/technology"
+import Text from "@/components/PText/PText.vue"
 
 interface TechnologySection {
-  title: string;
-  text: string;
-  technologies: Technology[];
+  title: string
+  text: string
+  technologies: Technology[]
 }
 
-defineProps<TechnologySection>();
+defineProps<TechnologySection>()
 </script>
 <template>
   <section class="flex flex-col justify-center items-center h-screen">

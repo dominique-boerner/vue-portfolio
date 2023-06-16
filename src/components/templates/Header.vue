@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { LottieAnimation } from "lottie-web-vue";
-import personAnimation from "@/assets/animations/24747-person-on-a-computer.json";
-import Text from "@/components/PText/PText.vue";
+import { LottieAnimation } from "lottie-web-vue"
+import personAnimation from "@/assets/animations/24747-person-on-a-computer.json"
+import Text from "@/components/PText/PText.vue"
 
 interface Header {
-  animationData: any;
-  title: string;
-  text: string;
+  animationData: any
+  title: string
+  text: string
 }
 
-defineProps<Header>();
+defineProps<Header>()
 </script>
 <template>
   <div class="flex flex-col justify-center items-center">

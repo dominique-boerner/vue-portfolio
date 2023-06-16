@@ -1,30 +1,30 @@
 <script setup lang="ts">
-import themeToggleAnimation from "@/assets/animations/47369-toggle-dark-light.json";
-import environment from "@/config/environment";
-import { setTranslation } from "@/util/translation.util";
-import { LottieAnimation } from "lottie-web-vue";
-import LanguagePicker from "@/components/molecules/LanguagePicker.vue";
-import { useThemeStore } from "@/stores/theme.store";
-import { onMounted, ref } from "vue";
+import themeToggleAnimation from "@/assets/animations/47369-toggle-dark-light.json"
+import environment from "@/config/environment"
+import { setTranslation } from "@/util/translation.util"
+import { LottieAnimation } from "lottie-web-vue"
+import LanguagePicker from "@/components/molecules/LanguagePicker.vue"
+import { useThemeStore } from "@/stores/theme.store"
+import { onMounted, ref } from "vue"
 
-const themeStore = useThemeStore();
-let themeButton = ref();
+const themeStore = useThemeStore()
+let themeButton = ref()
 
-onMounted(animateThemeButton);
+onMounted(animateThemeButton)
 
 function toggleTheme() {
-  themeStore.toggleTheme();
-  animateThemeButton();
+  themeStore.toggleTheme()
+  animateThemeButton()
 }
 
 function animateThemeButton() {
-  const isDark = themeStore.theme === "dark";
+  const isDark = themeStore.theme === "dark"
   if (isDark) {
-    themeButton.value.setDirection(1);
-    themeButton.value.play();
+    themeButton.value.setDirection(1)
+    themeButton.value.play()
   } else {
-    themeButton.value.setDirection(-1);
-    themeButton.value.play();
+    themeButton.value.setDirection(-1)
+    themeButton.value.play()
   }
 }
 </script>
@@ -47,8 +47,8 @@ function animateThemeButton() {
         :selected-language="$i18n.locale"
         :available-languages="environment.availableLanguages"
         @select-language="
-          $i18n.locale = $event;
-          setTranslation($event);
+          $i18n.locale = $event
+          setTranslation($event)
         "
       ></LanguagePicker>
     </div>

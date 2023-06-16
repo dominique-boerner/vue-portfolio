@@ -1,1 +1,1 @@
-export type Technology = string;
+export type Technology = string

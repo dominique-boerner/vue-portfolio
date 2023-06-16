@@ -1,10 +1,10 @@
-import { defineStore } from "pinia";
-import type { Theme } from "@/types/theme";
+import { defineStore } from "pinia"
+import type { Theme } from "@/types/theme"
 
-const LS_THEME_KEY = "IS_DARK_MODE";
+const LS_THEME_KEY = "IS_DARK_MODE"
 
 interface ThemeStore {
-  theme: Theme;
+  theme: Theme
 }
 
 /**
@@ -17,8 +17,8 @@ export const useThemeStore = defineStore("theme", {
     } as ThemeStore),
   actions: {
     toggleTheme() {
-      this.theme = this.theme === "light" ? "dark" : "light";
-      localStorage.setItem(LS_THEME_KEY, this.theme);
+      this.theme = this.theme === "light" ? "dark" : "light"
+      localStorage.setItem(LS_THEME_KEY, this.theme)
     },
   },
-});
+})

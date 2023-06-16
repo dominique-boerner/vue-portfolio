@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { ref } from "vue"
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
-const itemAmount = 3;
+const itemAmount = 3
 const items = [
   "Lorem Ipsum 1",
   "Lorem Ipsum 2",
@@ -10,20 +10,20 @@ const items = [
   "Lorem Ipsum 4",
   "Lorem Ipsum 5",
   "Lorem Ipsum 6",
-];
+]
 
-const currentSlide = ref(0);
-const slides = Math.ceil(items.length / itemAmount);
+const currentSlide = ref(0)
+const slides = Math.ceil(items.length / itemAmount)
 
 function prev() {
   if (currentSlide.value > 0) {
-    currentSlide.value--;
+    currentSlide.value--
   }
 }
 
 function next() {
   if (currentSlide.value < slides - 1) {
-    currentSlide.value++;
+    currentSlide.value++
   }
 }
 </script>
