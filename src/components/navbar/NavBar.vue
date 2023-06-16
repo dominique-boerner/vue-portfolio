@@ -4,7 +4,7 @@ import environment from "@/config/environment";
 import { setTranslation } from "@/util/translation.util";
 import { LottieAnimation } from "lottie-web-vue";
 import LanguagePicker from "@/components/molecules/LanguagePicker.vue";
-import { useThemeStore } from "../../../stores/theme.store";
+import { useThemeStore } from "@/stores/theme.store";
 import { onMounted, ref } from "vue";
 
 const themeStore = useThemeStore();

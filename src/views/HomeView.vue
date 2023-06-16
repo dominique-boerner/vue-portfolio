@@ -12,7 +12,7 @@ import TechnologySection from "@/components/templates/TechnologySection.vue";
 import Footer from "@/components/templates/Footer.vue";
 import { technologies } from "@/technologies";
 import { computed } from "vue";
-import { useThemeStore } from "../../stores/theme.store";
+import { useThemeStore } from "@/stores/theme.store";
 
 const themeStore = useThemeStore();
 const state = computed(() => ({
