@@ -2,7 +2,7 @@
 import { RouterView } from "vue-router"
 import { useScroll } from "@/composables/useScroll"
 import Fab from "@/components/atoms/Fab.vue"
-import NavBar from "@/components/navbar/NavBar.vue"
+import NavBar from "@/components/PNavbar/PNavBar.vue"
 import { useThemeStore } from "@/stores/theme.store"
 import Footer from "@/components/templates/Footer.vue"
 
