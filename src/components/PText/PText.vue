@@ -2,15 +2,18 @@
 import type { Font, TextType } from "@/components/PText/textType"
 import { computed, toRefs } from "vue"
 import type { ComputedRef } from "vue"
+import PSkeleton from "@/components/PSkeleton/PSkeleton.vue"
 
 interface TextProps {
   font?: Font
   type?: TextType
+  isLoading?: boolean
 }
 
 const props = withDefaults(defineProps<TextProps>(), {
   type: "body1",
   font: "default",
+  isLoading: false,
 })
 
 const { type, font } = toRefs(props)
@@ -61,6 +64,11 @@ const tag: ComputedRef<string> = computed(() => {
 
 <template>
   <component :is="tag" :class="getClass">
-    <slot></slot>
+    <PSkeleton
+      v-if="isLoading"
+      class="my-1"
+      :type="type as TextType"
+    ></PSkeleton>
+    <slot v-if="!isLoading"></slot>
   </component>
 </template>

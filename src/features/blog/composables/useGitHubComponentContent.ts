@@ -17,8 +17,12 @@ const componentPathLookup: Record<PComponentName, string> = {
  */
 export const useGitHubComponentContent = (
   component: PComponentName
-): { githubComponentContent: Ref<GitHubContent | undefined> } => {
+): {
+  githubComponentContent: Ref<GitHubContent | undefined>
+  isLoading: Ref<boolean>
+} => {
   const githubComponentContent = ref<GitHubContent>()
+  const isLoading = ref(true)
 
   onMounted(async () => {
     githubComponentContent.value = await fetch(
@@ -30,7 +34,9 @@ export const useGitHubComponentContent = (
         ...githubContent,
         content: window.atob(githubContent.content),
       }))
+      .then()
+    isLoading.value = false
   })
 
-  return { githubComponentContent }
+  return { isLoading, githubComponentContent }
 }
