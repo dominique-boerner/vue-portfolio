@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import PText from "@/components/PText/PText.vue"
-import Card from "@/components/card/Card.vue"
+import Card from "@/components/PCard/PCard.vue"
 import TypographyImg from "@/assets/design/typography.png"
 import router from "@/router"
 
