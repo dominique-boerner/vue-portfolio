@@ -20,7 +20,7 @@ function scrollTop() {
 <template>
   <div :class="themeStore.theme">
     <div class="bg-body dark:bg-primary">
-      <div class="mx-auto px-12 py-6 max-w-portfolio md:p-6">
+      <div class="mx-auto max-w-portfolio px-4 py-6 md:p-6">
         <header>
           <NavBar />
         </header>

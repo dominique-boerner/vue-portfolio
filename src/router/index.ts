@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import HomeView from "../views/HomeView.vue"
 import BlogView from "@/features/blog/views/BlogView.vue"
 import DesignView from "@/features/design/views/DesignView.vue"
+import DesignTypographyView from "@/features/design/views/DesignTypographyView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
       path: "/design",
       name: "design",
       component: DesignView,
+    },
+    {
+      path: "/design/typography",
+      name: "design-typography",
+      component: DesignTypographyView,
     },
     {
       path: "/blog",

@@ -24,6 +24,10 @@
   },
   "design": {
     "title": "Handmade components",
-    "text": "Every website needs its own style, so the elements of my portfolio are all self-developed and not based on common component libraries. To speed up the development of the individual components, I have been using TailwindCSS for many years. On the following pages I explain what I thought about when designing the individual elements. The source code is of course publicly available on GitHub."
+    "text": "Every website needs its own style, so the elements of my portfolio are all self-developed and not based on common component libraries. To speed up the development of the individual components, I have been using TailwindCSS for many years. On the following pages I explain what I thought about when designing the individual elements. The source code is of course publicly available on GitHub.",
+    "typography": {
+      "card-title": "Typography",
+      "card-text": "How was Typography implemented?"
+    }
   }
 }

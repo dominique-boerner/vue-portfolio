@@ -23,7 +23,7 @@ const getClass: ComputedRef<string> = computed(() => {
     heading1: "text-heading1 leading-relaxed",
     heading2: "text-heading2",
     heading3: "text-heading3",
-    title: "text-title leading-relaxed",
+    title: "text-heading1 font-bold text-center leading-relaxed sm:text-title",
     body1: "text-body1 leading-8",
     body2: "text-body2 leading-6",
   }

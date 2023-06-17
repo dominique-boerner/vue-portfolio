@@ -24,6 +24,10 @@
   },
   "design": {
     "title": "Handgefertigte Komponenten",
-    "text": "Jede Webseite benötigt Ihren eigenen Stil, daher sind die Elemente meines Portfolios alle selbst entwickelt worden und basieren nicht auf gängigen Komponenten-Bibliotheken. Um die Entwicklung der einzelnen Komponenten zu beschleunigen, setze ich seit nun mittlerweile vielen Jahren auf TailwindCSS. Auf den folgenden Seiten erläutere ich, was ich mir beim Design der einzelnen Elemente gedacht habe. Der Quellcode steht selbstverständlich öffentlich auf GitHub zur Verfügung."
+    "text": "Jede Webseite benötigt Ihren eigenen Stil, daher sind die Elemente meines Portfolios alle selbst entwickelt worden und basieren nicht auf gängigen Komponenten-Bibliotheken. Um die Entwicklung der einzelnen Komponenten zu beschleunigen, setze ich seit nun mittlerweile vielen Jahren auf TailwindCSS. Auf den folgenden Seiten erläutere ich, was ich mir beim Design der einzelnen Elemente gedacht habe. Der Quellcode steht selbstverständlich öffentlich auf GitHub zur Verfügung.",
+    "typography": {
+      "card-title": "Typography",
+      "card-text": "Wie wurde Typography implementiert?"
+    }
   }
 }
