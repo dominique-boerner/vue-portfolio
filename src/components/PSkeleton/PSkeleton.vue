@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { TextType } from "@/components/PText/textType"
-import { computed, ComputedRef, toRefs } from "vue"
+import { computed, toRefs } from "vue"
+import type { ComputedRef } from "vue"
 
 type PSkeletonLoaderType = TextType
 interface PSkeletonProps {
