@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Font, TextType } from "@/components/PText/textType"
 import { computed, toRefs } from "vue"
 import type { ComputedRef } from "vue"
+import type { Font, TextType } from "@/components/PText/textType"
 import PSkeleton from "@/components/PSkeleton/PSkeleton.vue"
 
 interface TextProps {

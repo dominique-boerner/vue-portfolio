@@ -3,6 +3,7 @@ import PText from "@/components/PText/PText.vue"
 import Card from "@/components/PCard/PCard.vue"
 import TypographyImg from "@/assets/design/typography.png"
 import router from "@/router"
+import Tag from "@/components/atoms/Tag.vue"
 
 const navigate = () => {
   router.push("/design/typography")
@@ -11,6 +12,7 @@ const navigate = () => {
 
 <template>
   <div class="flex min-h-screen flex-col">
+    <Tag label="Beta"></Tag>
     <PText class="pt-24" type="title">{{ $t("design.title") }}</PText>
     <PText>
       {{ $t("design.text") }}

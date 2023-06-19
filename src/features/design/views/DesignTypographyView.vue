@@ -1,8 +1,19 @@
 <script setup lang="ts">
 import PText from "@/components/PText/PText.vue"
 import { useGitHubComponentContent } from "@/features/blog/composables/useGitHubComponentContent"
+import type { TextType } from "@/components/PText/textType"
+import PComponentPreview from "@/features/design/components/PComponentPreview.vue"
 
 const { isLoading, githubComponentContent } = useGitHubComponentContent("PText")
+
+const textTypes: TextType[] = [
+  "title",
+  "heading1",
+  "heading2",
+  "heading3",
+  "body1",
+  "body2",
+]
 </script>
 <template>
   <section class="flex min-h-screen flex-col">
@@ -18,18 +29,25 @@ const { isLoading, githubComponentContent } = useGitHubComponentContent("PText")
       </PText>
     </header>
     <main class="flex flex-col">
-      <PText class="pt-8" type="heading1" :is-loading="isLoading"
-        >Technische Umsetzung
+      <PComponentPreview :code="githubComponentContent?.content">
+        <PText v-for="type in textTypes" class="my-6" :type="type">
+          {{ type }}
+        </PText>
+      </PComponentPreview>
+      <PText class="pt-8" type="heading1" :is-loading="isLoading">
+        Implementierung
       </PText>
       <PText :is-loading="isLoading"
         >In der Webseite wird die Typography durch eine “PText” Komponente
-        dargestellt. Diese Komponente unterstützt zwei Parameter:
+        dargestellt. Diese Komponente unterstützt folgende Parameter:
+        <ul class="list-disc p-6">
+          <li>font: die Schriftart</li>
+          <li>
+            type: die Art der Schrift, z. B. "title", "heading1" oder "body1".
+          </li>
+          <li>isLoading: zeigt einen Skeleton loader an wenn true.</li>
+        </ul>
       </PText>
-      <PText class="pt-8" type="body2" :is-loading="isLoading"
-        >(optional)
-      </PText>
-      <PText type="heading2" :is-loading="isLoading">TextType</PText>
-      <PText type="body1" :is-loading="isLoading">Lorem ipsum</PText>
       <!--      <PText>-->
       <!--        {{ githubComponentContent?.content }}-->
       <!--      </PText>-->
