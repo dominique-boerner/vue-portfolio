@@ -2,6 +2,9 @@
 import PText from "@/components/PText/PText.vue"
 import BlogCard1 from "@/features/blog/components/BlogCard/BlogCard1.vue"
 import BlogCard2 from "@/features/blog/components/BlogCard/BlogCard2.vue"
+import useBlog from "@/features/blog/composables/useBlog"
+
+const { getCategories } = useBlog()
 
 // only for testing purposes
 const date = new Date()

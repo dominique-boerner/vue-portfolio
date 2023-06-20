@@ -28,7 +28,7 @@ module.exports = {
         body2: "1.2rem",
       },
       colors: {
-        primary: "#05060C",
+        primary: "#17191C",
         "primary-contrast": "#DDDFEC",
         secondary: "#CF2525",
         body: "#DDDFEC",
