@@ -14,7 +14,7 @@ const date = new Date()
   <div class="flex min-h-screen flex-col">
     <PText class="py-24" type="title">Blog</PText>
 
-    <div class="grid grid-cols-2 gap-24">
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-24">
       <BlogCard1
         title="8 places to enjoy driving outdoors in Brighton"
         img-src="https://images.unsplash.com/photo-1524077410193-2f667f9ab09a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
