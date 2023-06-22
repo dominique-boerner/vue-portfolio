@@ -15,10 +15,6 @@ const { imgSrc, title, text } = toRefs(props)
 const hasHeader = () => {
   return imgSrc?.value
 }
-
-const hasMain = () => {
-  return title?.value && text?.value
-}
 </script>
 
 <template>
@@ -26,11 +22,11 @@ const hasMain = () => {
     class="cursor-pointer rounded-md border-4 border-white bg-white shadow-md transition hover:shadow-lg dark:border-primary-contrast dark:bg-primary"
   >
     <header v-if="hasHeader()">
-      <img class="w-full object-cover" alt="" :src="imgSrc" />
+      <img class="w-full aspect-square object-cover" alt="" :src="imgSrc" />
     </header>
-    <main v-if="hasMain()" class="flex flex-col px-4 py-4">
-      <PText type="heading1" class="font-bold">{{ title }}</PText>
-      <PText class="my-2" type="body1">
+    <main class="flex flex-col px-4 py-4">
+      <PText v-if="title" type="heading1" class="font-bold">{{ title }}</PText>
+      <PText v-if="text" class="my-2" type="body1">
         {{ text }}
       </PText>
     </main>

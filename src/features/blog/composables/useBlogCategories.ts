@@ -1,4 +1,4 @@
-export default function useBlog() {
+export default function useBlogCategories() {
   const getCategories = () => {
     return ["Design", "Development", "CI/CD", "UX"]
   }

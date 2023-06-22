@@ -22,7 +22,7 @@ const date = formatter.value.format(props.date)
         class="my-4 inline rounded-r-2xl box-decoration-clone text-6xl font-bold leading-[5.5rem]"
       >
         <span
-          class="inline rounded-r-2xl bg-primary-contrast box-decoration-clone p-2 px-5"
+          class="inline rounded-r-2xl bg-primary-contrast box-decoration-clone p-3 px-5"
         >
           {{ title }}
         </span>
