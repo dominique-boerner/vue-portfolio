@@ -10,7 +10,6 @@ export type TextType =
   | "heading3"
   | "body1"
   | "body2"
-  | "code"
 
 /**
  * The font is determined on the basis of the font. The definition of
