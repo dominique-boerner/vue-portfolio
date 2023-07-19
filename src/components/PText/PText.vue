@@ -29,6 +29,7 @@ const getClass: ComputedRef<string> = computed(() => {
     title: "text-heading1 font-bold text-center leading-relaxed sm:text-title",
     body1: "text-body1 leading-8",
     body2: "text-body2 leading-6",
+    code: "text-code font-mono",
   }
 
   const fontClassLookup: Record<Font, string> = {
@@ -56,6 +57,7 @@ const tag: ComputedRef<string> = computed(() => {
     body1: "p",
     body2: "p",
     title: "span",
+    code: "span",
   }
 
   return tags[type]

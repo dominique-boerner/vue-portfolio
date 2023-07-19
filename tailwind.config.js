@@ -18,6 +18,7 @@ module.exports = {
         title: "6rem",
         body1: "1.45rem",
         body2: "1.2rem",
+        code: "1.2rem",
       },
       height: {
         heading1: "2.4rem",

@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue"
 import BlogView from "@/features/blog/views/BlogView.vue"
 import DesignView from "@/features/design/views/DesignView.vue"
 import DesignTypographyView from "@/features/design/views/DesignTypographyView.vue"
+import BlogPostView from "@/features/blog/views/BlogPostView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: "/blog",
       name: "blog",
       component: BlogView,
+    },
+    {
+      path: "/blog/:id",
+      name: "blogPage",
+      component: BlogPostView,
     },
     {
       path: "/:pathMatch(.*)",
