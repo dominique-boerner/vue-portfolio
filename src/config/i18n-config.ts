@@ -1,10 +1,10 @@
 import de from "@/i18n/de.json"
 import en from "@/i18n/en.json"
-import { getTranslation } from "@/util/translation.util"
+import { getLanguage } from "@/util/translation.util"
 
 export default {
   legacy: false,
-  locale: getTranslation(),
+  locale: getLanguage(),
   messages: {
     en,
     de,
