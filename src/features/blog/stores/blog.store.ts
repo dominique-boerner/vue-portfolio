@@ -1,6 +1,8 @@
 import { defineStore } from "pinia"
 import type { BlogPost, BlogPosts } from "@/features/blog/models/blog.model"
 import { ref } from "vue"
+import type { StrapiResponse } from "../../../../portfolio-api/types/types"
+import type { PostAttributes } from "../../../../portfolio-api/types/post.types"
 
 export const useBlogStore = defineStore("blog", () => {
   const posts = ref<BlogPosts>([])
@@ -43,9 +45,18 @@ export const useBlogStore = defineStore("blog", () => {
     return posts.value[0]
   }
 
+  const getStrapiPost = async (slug: string): Promise<PostAttributes> => {
+    const response = await fetch(
+      `http://localhost:1337/api/posts?filters[slug][$eq]=${slug}`
+    )
+    const value = (await response.json()) as StrapiResponse<PostAttributes>
+    return value.data[0].attributes
+  }
+
   return {
     fetchPosts,
     getPost,
+    getStrapiPost,
     posts,
   }
 })
