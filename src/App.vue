@@ -18,7 +18,7 @@ function scrollTop() {
 </script>
 
 <template>
-  <div :class="themeStore.theme">
+  <div :class="themeStore.theme" data-testid="theme-container">
     <div class="bg-body dark:bg-primary">
       <div class="mx-auto max-w-portfolio px-4 py-6 md:p-6">
         <header>

@@ -41,7 +41,7 @@ const setTranslation = (language: string) => {
     <button
       class="w-32 select-none"
       @click="toggleTheme()"
-      data-cy="theme-toggle-button"
+      data-testid="theme-toggle-button"
     >
       <lottie-animation
         ref="themeButton"

@@ -1,39 +1,39 @@
-name: Deploy Front-End
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [ 16.x ]
-
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          persist-credentials: false
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          anode-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: npm i
-      - run: npm run build
-      - run: cp ".htaccess" "dist/"
-      - name: copy file via ssh password
-        uses: garygrossgarten/github-action-scp@release
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          local: "dist"
-          rmRemote: true
-          remote: "/"
+#name: Deploy Front-End
+#
+#on:
+#  push:
+#    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main" ]
+#
+#jobs:
+#  build:
+#
+#    runs-on: ubuntu-latest
+#
+#    strategy:
+#      matrix:
+#        node-version: [ 16.x ]
+#
+#    steps:
+#      - uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#          persist-credentials: false
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v3
+#        with:
+#          anode-version: ${{ matrix.node-version }}
+#          cache: 'npm'
+#      - run: npm i
+#      - run: npm run build
+#      - run: cp ".htaccess" "dist/"
+#      - name: copy file via ssh password
+#        uses: garygrossgarten/github-action-scp@release
+#        with:
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.USERNAME }}
+#          password: ${{ secrets.PASSWORD }}
+#          local: "dist"
+#          rmRemote: true
+#          remote: "/"
