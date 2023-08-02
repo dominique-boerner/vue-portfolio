@@ -7,6 +7,11 @@ import { StrapiUrl } from "@/util/strapi/strapi-url.util"
 export function useStrapi() {
   const BASE_URL = "http://localhost:1337/api"
 
+  /**
+   * Find strapi content via endpoint.
+   * @param endpoint
+   * @param filters
+   */
   const find = async <T>(
     endpoint: string,
     filters?: string[]

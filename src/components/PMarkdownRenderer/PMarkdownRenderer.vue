@@ -38,5 +38,13 @@ defineProps({
       @apply rounded-md;
     }
   }
+
+  ul {
+    list-style-type: square;
+  }
+
+  a {
+    @apply underline;
+  }
 }
 </style>

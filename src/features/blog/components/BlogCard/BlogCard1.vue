@@ -1,16 +1,11 @@
 <script setup lang="ts">
-import { useIntlDateTimeFormat } from "vue-composable"
-
 interface BlogCardProps {
   title: string
-  date: Date
+  date: string
   imgSrc: string
 }
 
 const props = defineProps<BlogCardProps>()
-
-const { formatter } = useIntlDateTimeFormat()
-const date = formatter.value.format(props.date)
 </script>
 
 <template>
