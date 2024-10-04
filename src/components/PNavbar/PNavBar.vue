@@ -3,10 +3,10 @@ import themeToggleAnimation from "@/assets/animations/47369-toggle-dark-light.js
 import environment from "@/config/environment"
 import { setTranslationLocalStorage } from "@/util/translation.util"
 import { LottieAnimation } from "lottie-web-vue"
-import LanguagePicker from "@/components/molecules/LanguagePicker.vue"
 import { useThemeStore } from "@/stores/theme.store"
 import { onMounted, ref } from "vue"
 import { useI18n } from "vue-i18n"
+import AppLanguagePicker from "@/components/AppLanguagePicker/AppLanguagePicker.vue"
 
 const themeStore = useThemeStore()
 const { locale } = useI18n()
@@ -39,7 +39,7 @@ const setTranslation = (language: string) => {
 <template>
   <div class="flex justify-between dark:bg-primary dark:text-body">
     <button
-      class="w-32 select-none"
+      class="w-32 h-full select-none rounded-full"
       @click="toggleTheme()"
       data-testid="theme-toggle-button"
     >
@@ -50,11 +50,11 @@ const setTranslation = (language: string) => {
       ></lottie-animation>
     </button>
     <div class="flex items-center">
-      <LanguagePicker
+      <AppLanguagePicker
         :selected-language="$i18n.locale"
         :available-languages="environment.availableLanguages"
         @select-language="setTranslation($event)"
-      ></LanguagePicker>
+      ></AppLanguagePicker>
     </div>
   </div>
 </template>
